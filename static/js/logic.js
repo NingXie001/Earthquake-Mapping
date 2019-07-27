@@ -94,7 +94,7 @@ function createMap(earthquakes) {
       collapsed: false
     }).addTo(myMap);
 
-    var legend = L.control({position: 'bottomleft'});
+    var legend = L.control({position: 'bottomright'});
 
     legend.onAdd = function(myMap){
       var div = L.DomUtil.create('div', 'info legend'),
@@ -128,4 +128,3 @@ function createMap(earthquakes) {
   function getRadius(value){
     return value*25000
   }
-
